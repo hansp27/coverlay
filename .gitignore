@@ -1,0 +1,23 @@
+*.zip
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and env
+*.log
+.env
+.env.*
+
+# Editors/IDE
+.idea/
+.vscode/
+
+# Build/output
+dist/
+build/
+
+# web-ext artifacts (when packaging/testing the extension)
+web-ext-artifacts/
+.web-extension-id

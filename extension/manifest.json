@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "Coverlay",
+  "version": "1.0.0",
+  "description": "Hide what you don't want to see. ",
+  "action": {
+    "default_title": "Toggle Draw Overlay",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png"
+    }
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["storage", "scripting", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "toggle-overlay": {
+      "suggested_key": {
+        "default": "Alt+Shift+A",
+        "mac": "Alt+Shift+A"
+      },
+      "description": "Toggle drawing overlay on the current page"
+    },
+    "enable-draw-mode": {
+      "description": "Toggle draw mode"
+    },
+    "toggle-drawings-visibility": {
+      "description": "Show/hide drawings"
+    },
+    "toggle-ui-visibility": {
+      "description": "Show/hide overlay UI"
+    }
+  },
+   "icons": {
+    "16": "icons/16.png",
+    "19": "icons/19.png",
+    "24": "icons/24.png",
+    "32": "icons/32.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "64": "icons/64.png",
+    "96": "icons/96.png",
+    "128": "icons/128.png",
+    "256": "icons/256.png",
+    "512": "icons/512.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "coverlay@hansp27.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  }
+}
